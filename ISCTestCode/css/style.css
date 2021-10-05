@@ -1,0 +1,261 @@
+/* NOTE: some classes may be repeated across multiple elements
+   this is done either to change individual element attributes (seen in most css)
+   or to exclude the functionality from particular elements (due to limitations of css,
+   and particular to certain programmers, like myself)
+*/
+/*NOTE: some css is defined for "cards", which visually isolate forms
+  or other functionality from the surrounding page, or each other,
+  it takes 3 divs to create such a "card"
+  -1st isccard class to surround and box in the card
+  -2nd isccardheader to format the label for the card
+  -3rd container, which is for the internal functionality of the card,
+  which will usually be a form
+*/
+body {
+  background-color: lightgray;
+}
+.regfill {
+  background-color: lightsteelblue;
+}
+/*fancy fills are gradient, and are useful for cards*/
+.fancyfill {
+  background-image: linear-gradient(to bottom left, lightgray, lightsteelblue);
+}
+.fancyfill2 {
+  background-image: linear-gradient(to bottom right, lightgray, gray);
+}
+/*thumbcenter resizes and formats thumbnail image,
+  centering it to the page or div (whichever is applicable)
+*/
+img.thumbcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+ height: 120px;
+ border-radius: 50%;
+}
+/*
+technically, squareup centers an element,
+though in truth, it is not quite centered
+the rationale for this, is due to interactions
+of various elements,
+it also allows each element to flow to the next line,
+with a small amount of space between them by default
+*/
+.squareup2 {
+  display: block;
+  margin-left: 20%;
+  margin-right: auto;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 90%;
+}
+.squareup2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 90%;
+}
+.centerup {
+  text-align:center;
+
+}
+/*
+ topwidth is nearly 100% width,
+ 100% is avoided due to margins and other issues
+*/
+.topwidth {
+  width: 98%;
+}
+/*
+  title1 is the top size that should be used,
+  title2 is just in case bigger text is deemed appropriate
+*/
+.title1{
+  font-size: 250%;
+}
+.title2{
+  font-size: 275%;
+}
+/*
+  cmdscreen is to emulate the terminal environment,
+  so that the user may know that non-php scripts are being used,
+  these are dependent on the OS of the server, so
+  admins need to know when this occurs
+  (It also looks good on the admin screen titles, in my opinion)
+*/
+.cmdscreen{
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+/* big1, medium1, normal1, and small1 are the input text box sizes,
+  think of t-shirt sizes with the number 1, and you should be okay
+  (except normal1 is 100% PC default, medium1 is mobile capable default of 150%)
+  medium1 due to its usefulness applies to several other elements, like labels*/
+input.big1{
+  line-height: 200%;
+}
+input.medium1{
+  line-height: 150%;
+}
+input.normal1{
+  line-height: 100%;
+}
+input.small1{
+  line-height: 80%;
+}
+/* font faces are defined here, fancy1 is cursive style,
+   mono1 is terminal style or informational content,
+   official1 is useful in forms and other material
+   no others are defined*/
+.fancy1{
+  font-family: "Apple Chancery", "Monotype Corsiva", cursive;
+}
+.mono1{
+  font-family: "Mono", Mono, monospace;
+}
+label.official1{
+  font-family: "Times New Roman", Times, serif;
+}
+label.hbig1{
+  font-size: 300%;
+}
+label.big1{
+  font-size: 200%;
+}
+label.medium1{
+  font-size: 150%;
+}
+span.medium1{
+  font-size: 150%;
+}
+div.medium1{
+  font-size: 150%;
+}
+select.medium1{
+  font-size: 150%;
+}
+option.medium1{
+  font-size: 150%;
+}
+.normal1{
+  font-size: 100%;
+}
+label.small1{
+  font-size: 80%;
+}
+.fltright{
+  float: right;
+}
+.fltleft{
+  float: left;
+}
+div.isccard {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border: 1px darkslateblue solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+div.isccardheader {
+    height: 30%;
+    background-color: darkslateblue;
+    color: white;
+    text-align: center;
+}
+div.container {
+    padding: 2px 16px;
+    color: black;
+}
+/*
+  iscbtn defines an ideal button appearance
+  which is supposed to match the isccards,
+  and override the odd defaults for admin pages
+  (white submit buttons with no 3d appearance,
+  like box-shadow at all)
+*/
+.iscbtn {
+  height: 2em;
+  background-color: midnightblue;
+  color: white;
+  text-align: center;
+  font-size: 150%;
+  border-radius: 5px;
+  box-shadow: 0px 3px 3px #778899;
+  margin-top: 15px;
+}
+.iscbtn:hover {background-color: darkslateblue}
+
+.iscbtn:active {
+  background-color: darkslateblue;
+  box-shadow: 0 3px #667788;
+  transform: translateY(2px);
+}
+/*
+em1 and em2 are the width settings for input text boxes
+width and height should be isolated from each other
+for many form elements as best practice
+*/
+input.ch1{
+  width: 22ch;
+  max-width: 40ch;
+}
+input.ch2{
+  width: 28ch;
+  max-width: 40ch;
+}
+input.em1{
+  width: 22em;
+}
+input.em2{
+  width: 28em;
+}
+div.isctable {
+  display: table;
+  background-color: paleturquoise;
+  border: 1px solid midnightblue;
+  border-spacing: 5px; /* cellspacing:poor IE support for  this */
+  color: black;
+}
+div.iscrow {
+  display: table-row;
+  clear: both;
+
+}
+div.isccol1 {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;
+  width: 19%;
+  background-color: lightyellow;
+  text-align: center;
+  border: 1px solid lightsteelblue;
+  height: 3em;
+  margin-top: -4px;
+}
+div.isccol2 {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;
+  width: 19%;
+  background-color: lightcyan;
+  text-align: center;
+  border: 1px solid lightsteelblue;
+  height: 3em;
+  margin-top: -4px;
+}
+div.isctablehead {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;
+  width: 19%;
+  color: lightyellow;
+  border: 1px solid lightsteelblue;
+  background-color: royalblue;
+  text-align: center;
+  height: 3em;
+}
+
+
