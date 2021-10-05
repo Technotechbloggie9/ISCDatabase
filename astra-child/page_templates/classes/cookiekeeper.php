@@ -4,7 +4,7 @@ class CookieKeeper {
   protected $cookiename;
   protected $cookievalue;
   function __construct($cookiename) {
-    $this->$name = $cookiename;
+    $this->$cookiename = $cookiename;
   }
   function store($cookie_value){
     $this->cookievalue = $cookie_value;
