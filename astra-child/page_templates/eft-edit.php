@@ -1,4 +1,5 @@
 <?php
+//showing that atom is integrated by adding a comment 10-26-2021
 
 function divwrap($innerCode, $heightStr){
   $divCode = "<br><div style='height: ". $heightStr .";'>".
