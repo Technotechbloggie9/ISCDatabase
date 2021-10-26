@@ -3,7 +3,7 @@
 function divwrap($innerCode, $heightStr){
   $divCode = "<br><div style='height: ". $heightStr .";'>".
   $innerCode . "</div><br>";
-  return $divCode;
+  return $divCode; 
 }
 function labeledtxtinput($gLabel, $gName, $gSize, $gValue = '', $gReq = '', $gClass = 'medium1'){
   $gType = "text";
