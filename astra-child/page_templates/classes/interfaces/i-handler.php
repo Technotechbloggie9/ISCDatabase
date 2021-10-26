@@ -3,6 +3,6 @@ interface Handler
 {
     public function setFallback(Handler $handler): Handler;
 
-    public function handleRequest(string $request): ?string;
+    public function handle(string $request): ?string;
 }
 ?>
