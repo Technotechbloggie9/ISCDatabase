@@ -33,11 +33,6 @@
       derived from msqli but simplifies
       its operations
     ----------------
-    Forms Processing
-    	if form_is_not_submitted
-		show_the_form()
-	if form_is_submitted
-		process_the_form() //via the database
     */
 
 
