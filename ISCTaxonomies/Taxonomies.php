@@ -114,6 +114,14 @@
     
  }
  function register_isc_taxonomies(){
-   
+   register_taxonomy(
+     'subject',
+     'articles',
+     array(
+       'label' => __( 'Subjects' ),
+       'rewrite' => array( 'slug' => 'subject'),
+       'hierarchical' => true
+     )
+   );
  }
 ?>
