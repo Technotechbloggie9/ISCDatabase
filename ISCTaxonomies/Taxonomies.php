@@ -113,6 +113,13 @@
     */
     
  }
+ /*
+ function name: register_isc_taxonomies
+ description:
+ used by action hook to
+ run register_taxonomy WordPress functions
+ that allow custom taxonomies to be used
+ */
  function register_isc_taxonomies(){
    register_taxonomy(
      'subject',
