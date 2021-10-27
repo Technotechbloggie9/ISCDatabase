@@ -21,7 +21,39 @@
    add_action('init', 'register_isc_taxonomies');
  }
  function register_isc_posts(){
-   /*supports in register_post_type includes
+   register_post_type("article", );
+   /*
+   information
+
+    description
+    public
+    exclude_from_search
+    publicly_queryable
+    show_ui
+    show_in_nav_menus
+    show_in_menu
+    show_in_admin_bar
+    menu_position
+    menu_icon
+    capability_type
+    capabilities
+    map_meta_cap
+    hierarchical
+    supports
+    register_meta_box_cb
+    taxonomies
+    has_archive
+    rewrite
+    permalink_epmask
+    query_var
+    can_export
+    delete_with_user
+    show_in_rest
+    rest_base
+    rest_controller_class
+    _builtin
+    _edit_link 
+    supports in register_post_type includes
    
     ‘title’
     ‘editor’ (content)
@@ -35,6 +67,7 @@
     ‘page-attributes’ (template and menu order) (hierarchical must be true)
     ‘post-formats’ (see Post_Formats)
     */
+    
  }
  function register_isc_taxonomies(){
    
