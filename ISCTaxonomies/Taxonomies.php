@@ -12,4 +12,10 @@
  function mainbody(){
    
  }
+ function register_isc_posts(){
+   
+ }
+ function register_isc_taxonomies(){
+   
+ }
 ?>
