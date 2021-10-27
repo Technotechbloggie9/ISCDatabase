@@ -21,7 +21,34 @@
    add_action('init', 'register_isc_taxonomies');
  }
  function register_isc_posts(){
-   register_post_type("article", );
+   register_post_type("article", array(
+     'labels' => array(
+       'name' =>          _x('Articles', 'post type general name'),
+       'singular_name' => _x('Article', 'post type singular name'),
+       'add_new'       => _x('Add New', 'article'),
+       'add_new_item'  => __('Add New Article'),
+       'edit_item' =>     __( 'Edit Article' ),
+       'new_item'  =>     __( 'New Article' ),
+       'all_items' =>     __( 'All Articles' ),
+       'view_item' =>     __( 'View Article' ),
+       'search_items' =>  __( 'Search Articles' ),
+       'not_found'    =>  __( 'No articles found' ),
+       'not_found_in_trash' => __( 'No articles found in the Trash' ), 
+       'parent_item_colon'  => __('Parent Articles'),
+       'menu_name'          => 'Articles',
+       'featured_image'        => _x( 'Article Cover Image'),
+       'set_featured_image'    => _x( 'Set cover image'),
+       'remove_featured_image' => _x( 'Remove cover image'),
+       'use_featured_image'    => _x( 'Use as cover image'),
+       'archives'              => _x( 'Article archives', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'textdomain' ),
+       'insert_into_item'      => _x( 'Insert into article'),
+       'uploaded_to_this_item' => _x( 'Uploaded to this article'),
+       'filter_items_list'     => _x( 'Filter articles list'),
+       'items_list_navigation' => _x( 'Articles list navigation'),
+       'items_list'            => _x( 'Articles list'),
+    
+     ),
+   ));
    /*
    information
 
