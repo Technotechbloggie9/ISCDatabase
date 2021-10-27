@@ -35,7 +35,6 @@
        'not_found'    =>  __( 'No articles found' ),
        'not_found_in_trash' => __( 'No articles found in the Trash' ), 
        'parent_item_colon'  => __('Parent Articles'),
-       'menu_name'          => 'Articles',
        'featured_image'        => _x( 'Article Cover Image'),
        'set_featured_image'    => _x( 'Set cover image'),
        'remove_featured_image' => _x( 'Remove cover image'),
@@ -46,8 +45,26 @@
        'filter_items_list'     => _x( 'Filter articles list'),
        'items_list_navigation' => _x( 'Articles list navigation'),
        'items_list'            => _x( 'Articles list'),
-    
      ),
+     'menu_name'          => 'Articles',
+     'description'        => 'Articles are written information concerning events, performances, performers, or topics of interest',
+     'public'             => true,
+     'publicly_queryable' => true,
+     'exclude_from_search' => false,
+     'has_archive'         => true,
+     'slug'                => 'article',
+     'supports' => array(
+       'title',
+       'editor',
+       'author',
+       'excerpt',
+       'thumbnail',
+       'custom-fields',
+       'revisions'
+     ),
+     'show_ui' => true,
+     'show_in_nav_menus' => true,
+     'delete_with_user' => false
    ));
    /*
    information
