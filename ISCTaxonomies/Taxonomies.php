@@ -9,6 +9,13 @@
  */
  //ISC Capstone Group includes: 
  mainbody();
+ /*
+ function name: mainbody
+ description:
+ the main driver for setting up 
+ ISC custom posts, taxonomies, and 
+ search functionality
+ */
  function mainbody(){
    add_action('init', 'register_isc_posts');
    add_action('init', 'register_isc_taxonomies');
