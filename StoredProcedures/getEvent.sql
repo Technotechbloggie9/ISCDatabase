@@ -10,7 +10,9 @@ USE wordpress;
 
 --Create the new procedure
 DELIMITER ;;
-CREATE OR REPLACE PROCEDURE getEvents()
+CREATE OR REPLACE PROCEDURE getEvent(
+	IN	id		int(11)
+)
 BEGIN
 	select 	
 		event_id		as 'event_id', 
@@ -21,7 +23,8 @@ BEGIN
 		location		as 'location',
 		attendance		as 'attendance',
 		is_public		as 'is_public'
-	from Events;
+	from Events
+	where Events.event_id = id;
 END;;
 DELIMITER ;
 
